@@ -1,0 +1,10 @@
+def programa():
+          frase = str(input("Digite alguma frase: "))
+          l= " "
+          for c in frase:
+                     if ord(c) == 32:
+                             l = c + c
+                     print(c)
+          print(l)
+
+programa()
