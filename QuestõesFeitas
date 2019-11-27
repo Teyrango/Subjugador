@@ -1,0 +1,10 @@
+def questao():
+    frase = str(input("Digite uma frase:")).upper()
+    a = 0
+    for letra in frase:
+        if "A" in letra:
+            a = a+1
+        print(letra)
+    print(a,'Letras "A" foram escritas , independente de serem maiusculas ou minusculas')
+questao()
+            
