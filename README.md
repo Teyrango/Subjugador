@@ -1,2 +1,0 @@
-# Subjugador
-Analisador de códigos
