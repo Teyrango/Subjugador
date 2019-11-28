@@ -3,8 +3,11 @@
 def duplicada():
     frase = str(input("Digite uma frase:"))
     nova_frase = ""
+    nova_letra = ""
     for letra in frase:
-        letra = letra + letra
-    nova_frase = nova_frase + letra
+             nova_letra = (letra + letra)
+             print(letra)
+
+             nova_frase = nova_frase + nova_letra
     print(nova_frase)
 duplicada()
