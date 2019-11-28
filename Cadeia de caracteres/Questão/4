@@ -1,1 +1,10 @@
 #Leia uma frase e gere uma nova frase, duplicando cada caractere da frase digitada.
+
+def duplicada():
+    frase = str(input("Digite uma frase:"))
+    nova_frase = ""
+    for letra in frase:
+        letra = letra + letra
+    nova_frase = nova_frase + letra
+    print(nova_frase)
+duplicada()
