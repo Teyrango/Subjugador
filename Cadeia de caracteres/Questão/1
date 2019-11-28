@@ -1,0 +1,19 @@
+#Faça a criptografia de uma frase digitada pelo usuário.
+#Na criptografia, a frase deverá ser invertida e as consoantes deverão ser substituídas pelo caractere #.
+
+def letras():
+      frase = str(input( "Digite uma frase: "))
+      nova_frase =  "  "
+      
+      for letra in frase:
+          if ord(letra) in range(65,90) or ord(letra) in range(97,122):
+             if letra in  " AEIOUaeiou ":
+                 letra = letra
+             else:
+                 letra =  "#"
+          nova_frase = letra + nova_frase
+      print(nova_frase)
+letras()
+
+
+            
