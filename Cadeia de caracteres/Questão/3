@@ -3,8 +3,9 @@ def programa():
           l= " "
           for c in frase:
                      if ord(c) == 32:
-                             l = c + c
-                     print(c)
+                             l = l
+                     else:
+                             l = l + c
           print(l)
 
 programa()
