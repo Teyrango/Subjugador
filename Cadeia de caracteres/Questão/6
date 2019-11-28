@@ -1,0 +1,24 @@
+#Leia uma frase e gere uma nova frase, substituindo o algarismo que aparecer na frase por seu extenso.
+
+
+def algarismo():
+    frase = str(input("Digite uma frase:"))
+    nova_frase = ""
+    
+    for letra in frase:
+     if letra in "123456789":
+            letra = int(letra)
+            def numeros_extenso(letra):
+                     numeros = ["um","dois","tres","quatro","cinco","seis","sete","oito","nove"]
+                     numero = numeros[letra-1]
+                     return numero
+            letra = " " + numeros_extenso(letra) + " "
+     else:
+         letra = letra
+     nova_frase = nova_frase + letra
+          
+    print(nova_frase)
+
+algarismo()
+
+    
