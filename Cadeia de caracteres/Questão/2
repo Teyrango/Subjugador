@@ -1,0 +1,15 @@
+# Leia uma frase e mostre cada palavra da frase em uma linha separada.
+
+
+def palavras():
+    frase = str(input("Digite uma frase:"))
+    nova_frase = ""
+    for letra in frase:
+        if ord(letra) == 32:
+                 letra = "\n"
+        else:
+             letra = letra
+        nova_frase = nova_frase + letra
+    print(nova_frase)
+palavras()
+    
