@@ -1,0 +1,20 @@
+#Converta um numero do sistema binário, dado como uma cadeia de zeros e uns, para o sistema decimal
+de numeração.
+
+
+def inverter(s):
+    r = ''
+    for c in s:
+        r = c + r
+    return r
+def binario_para_decimal(binario):
+    binario = inverter(binario)
+    expoente = decimal = 0
+    for c in binario:
+         decimal += (int(c) * (2 ** expoente))
+         expoente += 1
+    return decimal
+
+binario = '10011011'
+decimal = binario_para_decimal(binario)
+print(decimal)
