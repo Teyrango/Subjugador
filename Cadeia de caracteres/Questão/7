@@ -16,7 +16,8 @@ def conjugar():
                   "NOS "+nova_palavra+ "EMOS \n"
                   "VOS "+nova_palavra+ "EIS \n"
                   "ELES "+nova_palavra+ "EM \n")
+    else:
+        print("Apenas um verbo regular de terminação ER é aceito!!")
         
 
 conjugar()
-          
