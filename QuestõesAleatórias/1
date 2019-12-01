@@ -24,7 +24,7 @@ def formato():
           else:
               print("Não existe o dia digitado!!")
         else:
-           if  numero == 2:
+           if  numero == 2 or 1:
              forma = input(" Digite o ano:")
            else:
              print("Não existe o mês digitado!!")
