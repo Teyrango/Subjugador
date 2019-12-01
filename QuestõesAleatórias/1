@@ -1,0 +1,37 @@
+#Digite uma data de aniversário em numeros e imprima da seguinte forma: Dia:Mês por extenso:Ano
+
+def formato():
+    c = 0
+    data = ""
+    print("Digite a data do seu aniversário:")
+    while c < 3:
+        if c == 0:
+           forma = input(" Digite dia:")
+           form = len(forma)
+           forma = forma + ":"
+        elif c == 1:       
+          if form == 2:
+             forma = input(" Digite mes:")
+             numero = len(forma)
+             forma = int(forma)
+             def palavra(forma):
+                   palavras = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+                               "Julho", "Agosto", "Setembro", "Outubro", "Novembro","Dezembro"]
+                   palavra = palavras[forma-1]
+                   return palavra
+           
+             forma = palavra(forma) + ":"
+          else:
+              print("Não existe o dia digitado!!")
+        else:
+           if  numero == 2:
+             forma = input(" Digite o ano:")
+           else:
+             print("Não existe o mês digitado!!")
+        c = c + 1
+        data = data + forma
+        
+    print(data)
+
+    
+formato()
