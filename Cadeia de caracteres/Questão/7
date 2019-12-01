@@ -1,0 +1,22 @@
+def conjugar():
+    verbo = input("Escreva um verbo:").upper()
+    numero =len(verbo)
+    parte= ""
+    nova_palavra = ""
+    for letra in verbo[0:-2]:
+        nova_palavra = nova_palavra + letra
+    print(nova_palavra)
+    for letra in verbo[numero-2] + verbo[numero-1]:
+        parte = parte+letra
+    print(parte)
+    if parte == "ER":
+        print("EU "+ nova_palavra+ "O \n"
+                  "TU "+ nova_palavra+ "ES \n"
+                  "ELE "+nova_palavra+ "E \n"
+                  "NOS "+nova_palavra+ "EMOS \n"
+                  "VOS "+nova_palavra+ "EIS \n"
+                  "ELES "+nova_palavra+ "EM \n")
+        
+
+conjugar()
+          
