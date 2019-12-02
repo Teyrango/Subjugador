@@ -4,7 +4,7 @@
 def data():
     data = str(input("Digite uma data:"))
     partes = data.split("/")
-    dis = partes[0
+    dis = partes[0]
     mes = int(partes[1])
     ano = partes[2]
     
