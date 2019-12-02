@@ -1,0 +1,13 @@
+#Leia uma string no formato hh:mm:ss e escreva o resultado na seguinte forma: " hh hora(s), mm minuto(s) e ss segundo(s)"
+
+
+def tempo():
+    data = str(input("Digite um horario no formato hh:mm:ss :"))
+    partes = data.split(":")
+    horas = partes[0]
+    minutos = partes[1]
+    segundos = partes[2]
+
+    print(horas," Horas ",minutos," Minutos ",segundos," Segundos")
+
+tempo()
