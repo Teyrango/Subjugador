@@ -1,0 +1,13 @@
+#Os editores de texto possuem um recurso que permite que o usuário substitua uma sub-cadeia de um
+#texto por outra cadeia de caracteres. Escreva um programa que realize esta ação numa frase dada.
+
+
+
+def substituir():
+    texto = input("Digite um texto: ")
+    inicio = int(input("Digite a posição inicial a ser subtituida: "))
+    fim = int(input("Digite a posição final a ser substituida: " ))
+    texto2 = input("Digite o que vai ficar no lugar: ")
+    print( texto[:inicio] + " ",texto2," " + texto[fim:])
+
+substituir()
