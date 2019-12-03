@@ -1,0 +1,11 @@
+#Escreva uma sub-rotina de nome substr, que extraia uma sub-cadeia de uma string. Ex.: substr(texto,
+#10, 20), extrairá 20 caracteres de texto a partir do caractere na posição 10.
+
+def sub_cadeia():
+    texto = input("Digite um texto: ")
+    la = " "
+    for l in texto:
+        if l != " ":
+            la=la+l
+    print(la[10:30])
+sub_cadeia()
