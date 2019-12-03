@@ -1,0 +1,27 @@
+#Uma palavra é palíndroma se ela não se altera quando lida da direita para esquerda. Por exemplo, raiar
+#é palíndroma. Escreva um programa que verifique se uma palavra digitada é palíndroma.
+
+def programa():
+    palavra = input("Digite algo: ")
+    tamanho = (len(palavra)-1)
+    nova_palavra = " "
+    n = 0
+    for l in palavra:
+        nova_palavra = l + nova_palavra
+    print(nova_palavra)
+    print(nova_palavra[n])
+    n = n+1
+        
+
+    while n < tamanho+1:
+          if nova_palavra[n] == palavra[n]:
+             print("Certo")
+          else:
+             print("Essa palavra não é palíndroma")
+             break
+          n = n+1
+          if n == tamanho+1:
+              print("Essa palavra é palindroma!!")
+          
+
+programa()
