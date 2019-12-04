@@ -1,0 +1,32 @@
+#As normas para a exibição da bibliografia de um artigo cientifico, de uma monografia, de um livro,
+#texto etc., exigem que o nome do autor seja escrito no formato último sobrenome, sequência das
+#primeiras letras do nome e dos demais sobrenomes, seguidas de ponto final. Por exemplo, Antonio
+#Carlos Jobim seria referido por Jobim, A. C.. Escreva um programa que receba um nome completo e o
+#escreva no formato de bibliografia.
+
+def sobrenome():
+          nome = str(input("Digite seu nome: "))
+          a = b = 0
+          tamanho = 0
+          for l in nome:
+                    tamanho = tamanho + 1
+          for l in nome:
+                    a = a
+                    if " " in l:
+                              primeiro = a + 1
+                              break
+                    a = a + 1
+          for l in nome[primeiro:]:
+                    b = b
+                    if " " in l:
+                              segundo = b + 1
+                              break
+                    b = b + 1
+                    
+          soma = primeiro + segundo
+          print(primeiro)
+          print(segundo)
+          print(nome[:primeiro - (primeiro-1)]+"."+nome[soma :soma +1])
+          #print(terceiro)
+         
+sobrenome()
