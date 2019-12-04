@@ -1,0 +1,31 @@
+#As companhias de transportes aéreos costumam representar os nomes dos passageiros no formato último
+#sobrenome/nome. Por exemplo, o passageiro Carlos Drummond de Andrade seria indicado por
+#Andrade/Carlos. Escreva um programa que leia um nome completo e o escreva no formato acima.
+
+def nome():
+          nome = str(input("Digite seu nome completo: "))
+          a = r =  0
+          contrario = " "
+          tamanho = 0
+          for l in nome:
+                    tamanho = tamanho + 1
+          for l in nome:
+                    a = a
+                    if " " in l:
+                              b = a + 1
+                              break
+                    a = a + 1
+          for l in nome:
+                    contrario = l + contrario
+          for l in contrario:
+                    r = r
+                    if " " in l:
+                              c = r + 1
+                              ultimo = tamanho - c
+                              break
+                    r = r + 1
+          print(nome[ultimo:tamanho]+"/"+nome[:b])        
+          print(b,c)
+
+
+nome()
