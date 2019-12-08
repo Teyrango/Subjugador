@@ -1,0 +1,11 @@
+#Escreva uma sub-rotina que gere logins para usuários de um sistema de computação baseado na seguinte
+#regra: o login é composto pelas letras iniciais do nome do usuário.
+
+def logins():
+    nome = input("Digite seu nome: ")
+    letras = nome.split()
+    logins_feitos = " "
+    for l in letras:
+        logins_feitos = logins_feitos + l[0]
+    print("Seu login eh: ",logins_feitos)
+logins()
