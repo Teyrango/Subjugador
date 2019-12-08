@@ -1,0 +1,17 @@
+#Escreva uma sub-rotina de nome vertical, que escreva um texto de até 20 caracteres na vertical. Ex.:
+#vertical (10,'Algoritmos'); escreverá 'Algoritmos' na coluna 10
+
+
+def vertical():
+    nome = input("Digite um texto: ")
+    cont = 1
+    for l in nome:
+        cont = cont + 1
+
+    if cont <= 20:
+        for l in nome:
+            print(10*" "+l)
+    else:
+        print("Tem mais de 20 caracteres!! ")
+
+vertical()
