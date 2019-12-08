@@ -6,9 +6,11 @@
 
 def sobrenome():
           nome = str(input("Digite seu nome: "))
-          a = b = 0
+          a = b = c = d = 0
           tamanho = 0
+          novo_nome = " "
           for l in nome:
+                    novo_nome = l + novo_nome
                     tamanho = tamanho + 1
           for l in nome:
                     a = a
@@ -22,11 +24,27 @@ def sobrenome():
                               segundo = b + 1
                               break
                     b = b + 1
-                    
+          for l in nome[segundo:]:
+                    c=c
+                    if " " in l:
+                              terceiro = c + 1
+                              break
+                    c = c + 1
+          for l in novo_nome:
+              d=d
+              if " "  in l:
+                  ultimo = d + 1
+                  break
+              d = d + 1
+                  
           soma = primeiro + segundo
+          ostres = primeiro + segundo + terceiro
+          print(novo_nome)
           print(primeiro)
           print(segundo)
-          print(nome[:primeiro - (primeiro-1)]+"."+nome[soma :soma +1])
-          #print(terceiro)
+          print(terceiro)
+          print(ultimo)
+          print(nome[tamanho-ultimo:tamanho]+","+nome[:primeiro - (primeiro-1)]+"."+nome[soma :soma +1]+"."+nome[ostres:tamanho-ultimo])
+
          
 sobrenome()
