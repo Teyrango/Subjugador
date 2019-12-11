@@ -1,0 +1,8 @@
+#Leia o valor da base e altura de um retângulo,
+#calcule e escreva sua área. (área = base * altura)
+
+def retangulo():
+    base = float(input("Digite o valor da base: "))
+    altura = float(input("Digite o valor da altura: "))
+    print(base*altura)
+retangulo()
