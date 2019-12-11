@@ -1,0 +1,8 @@
+#Leia o valor da base e altura de um triângulo,
+#calcule e escreva sua área. (área=(base * altura)/2)
+
+def triangulo():
+    base = float(input("Digite a base: "))
+    altura = float(input("Digite a altura: "))
+    print((base*altura)/2)
+triangulo()
