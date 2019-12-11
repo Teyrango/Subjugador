@@ -1,0 +1,17 @@
+#Leia 2 números inteiros,
+#calcule e escreva o quociente e o resto da divisão do 1o pelo 2o.
+
+def divisao():
+    a = 0
+    while a <=1:
+        numero = int(input("Digite um numero: "))
+        if a == 0 :
+            n0 = numero
+        if a == 1 :
+            n1 = numero
+        a = a + 1
+    quociente = n0//n1
+    resto = n0%n1
+    print("O quociente eh:",quociente,"E o resto eh:",resto)
+
+divisao()
