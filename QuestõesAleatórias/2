@@ -1,0 +1,12 @@
+#Leia um valor em horas e um valor em minutos, calcule e escreva o equivalente em minutos.
+
+def hora():
+    hora = str(input("Digite um valor em horas e minutos: "))
+    parte = hora.split(":")
+    parte1 = int(parte[0])*60
+    parte2 = int(parte[1])
+    soma = parte1 + parte2
+    
+    print("Equivale a ",soma, " minutos")
+    
+hora()
