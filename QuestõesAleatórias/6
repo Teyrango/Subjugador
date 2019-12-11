@@ -1,0 +1,9 @@
+#Leia uma velocidade em km/h,
+#calcule e escreva esta velocidade em m/s. (Vm/s = Vkm/h / 3.6)
+
+def km():
+    vel = int(input("Escreva uma velocidade em m/s: "))
+    nova_vel = vel/3.6
+    print("A nova velocidade em km/h eh : ",nova_vel)
+
+km()
