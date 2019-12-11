@@ -1,0 +1,21 @@
+#Leia 3 notas de um aluno e o peso de cada nota,
+#calcule e escreva a média ponderada.
+
+def media():
+    a = 0
+    while a <=2:
+        nota = float(input("Digite uma nota:"))
+        peso = float(input("Digite o peso da nota: "))
+        if a == 0:
+            nota1 = nota
+            peso1 = peso
+        if a == 1:
+            nota2 = nota
+            peso2 = peso
+        if a == 2:
+            nota3 = nota
+            peso3 = peso
+        a = a+1
+    media_ponderada = ((nota1*peso1) + (nota2*peso2) + (nota3*peso3))/(peso1+peso2+peso3)
+    print(media_ponderada)
+media()
