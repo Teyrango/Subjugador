@@ -1,0 +1,13 @@
+#Leia um número inteiro (3 dígitos) e escreva o inverso do número.
+#(Ex.: número = 532 ; inverso = 235)
+
+
+
+def inverso():
+    numero = int(input("Digite um numero com 3 digitos:"))
+    numero = str(numero)
+    inverso_numero = " "
+    for l in numero:
+        inverso_numero = l + inverso_numero
+    print(int(inverso_numero))
+inverso()
