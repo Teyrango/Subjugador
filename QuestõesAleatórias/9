@@ -1,0 +1,12 @@
+#Leia 2 números (A, B) e escreva-os em ordem inversa (B, A).
+
+def inverso():
+    a = 0
+    while a<=1:
+        numero = str(input("Digite um numero: "))
+        novo_numero = " "
+        for l in numero:
+            novo_numero =  l + novo_numero
+        print(int(novo_numero))
+        a = a + 1
+inverso()
