@@ -1,0 +1,10 @@
+#Leia o valor do dólar e um valor em dólar,
+#calcule e escreva o equivalente em real (R$).
+
+def converter():
+    valor_dolar = float(input("Digite o valor do dolar: "))
+    dolar = float(input("Digite um valor em dolar: "))
+    valor_real = dolar/valor_dolar
+    print("O valor do dolar em real eh: %.2f"%valor_real)
+
+converter()
