@@ -1,0 +1,12 @@
+#Leia um número inteiro (3 dígitos),
+#calcule e escreva a soma de seus elementos (C + D + U).
+
+def numero():
+    numero = str(input("Digite um numero de 3 digitos: "))
+    soma = 0
+    for l in numero:
+        soma = soma + int(l)
+  
+    print("A soma de seus numeros eh : " ,soma)
+
+numero()
