@@ -1,0 +1,22 @@
+#Leia 2 números, calcule e escreva a divisão da soma
+#pela subtração dos números lidos.
+
+def divisao():
+    a = 0
+    soma = 0
+    diferenca = 0
+    while a<=1:
+        numero = int(input("Digite um numero: "))
+        if a == 0 or a == 1 :
+            soma = soma + numero
+        if a == 0 or a == 1:
+            diferenca = numero - diferenca 
+        a = a + 1
+    divisao = soma/diferenca
+
+    print("A soma eh: ",soma)
+    print("A diferenca eh: ", diferenca)
+    print("A divisao eh : ", divisao)
+divisao()
+        
+
