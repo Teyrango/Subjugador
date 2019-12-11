@@ -1,0 +1,10 @@
+#Leia um valor em minutos, calcule e escreva o equivalente em horas e minutos.
+
+def minutos():
+    valor = int(input("Digite um valor em minutos : "))
+    hora = int(valor / 60)
+    minuto = valor%60
+   
+    print("O equivalente a",hora,":",minuto)
+
+minutos()
