@@ -1,0 +1,9 @@
+#Leia o valor do raio de uma circunferência,
+#calcule e escreva seu comprimento.(c = 2 * p * r)
+
+
+def circunferencia():
+    raio = float(input("Digite o valor do raio: "))
+    print(2*3.14*raio)
+
+circunferencia()
