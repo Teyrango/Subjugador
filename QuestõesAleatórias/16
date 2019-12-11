@@ -1,0 +1,7 @@
+#Leia o valor do lado de um quadrado,
+#calcule e escreva sua área. (área = lado2)
+
+def quadrado():
+    lado = float(input("Digite o valor do lado: "))
+    print(lado*lado)
+quadrado()
